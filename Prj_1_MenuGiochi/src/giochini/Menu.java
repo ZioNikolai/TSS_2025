@@ -9,7 +9,6 @@ public class Menu {
 		char scelta;
 		
 		do {
-				
 			System.out.println("----MENU----");
 			System.out.println("1. Gioco1");
 			System.out.println("2. Gioco2");
@@ -44,6 +43,7 @@ public class Menu {
 				System.out.println("Hai scelto il gioco 3");
 				//tombola
 				//Ricrea il gioco della tombola. Da un set di 90 numeri estraine 20. Mi raccomando non posso estrarre 2 volte lo stesso numero.
+			
 				break;
 			case 'q':
 				System.out.println("Stai uscendo dal programma...");
