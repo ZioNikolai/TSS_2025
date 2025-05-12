@@ -34,42 +34,4 @@ Se l'auto viene distrutta, anche il motore viene distrutto.
 
 Si dice che la composizione sia migliore dell'ereditarietà perché sostiene il riutilizzo del codice e il controllo della visibilità degli oggetti.
 
-```java
-do {
-			Menu.stampaMenu();
 
-			scelta = input.next().toLowerCase().charAt(0);
-			Conto mioConto = null;
-			int numeroConto = 0;
-
-			switch(scelta) {
-			case '1':
-				//posso essere sicuro che il mio contatore parta da 0
-				
-				contiCorrenti[Conto.contatore] = new Conto(1001, 120, "Laura Gialli", d);
-
-				break;
-			case '2': //Versamento
-				System.out.println("Forniscimi un numero di conto: ");
-				numeroConto = input.nextInt();
-				mioConto = trovaConto(contiCorrenti, numeroConto);
-				mioConto.versamento(500);		
-				break;
-			case '3':
-				System.out.println("Forniscimi un numero di conto: ");
-				numeroConto = input.nextInt();
-				mioConto = trovaConto(contiCorrenti, numeroConto);
-				mioConto.preleva(100);
-				break;
-			case '4':
-				System.out.println(contiCorrenti[0].stampaInfo());
-				
-				break;
-			default:
-				System.out.println("Scelta non valida");
-			break;
-			}
-			
-		}while(scelta != 'q');
-
-```
