@@ -10,7 +10,7 @@ public class Main {
 		
 		miaCasa.visualizzaStanze();
 		
-		//Prop size() degli ArrayList
+		//Prop size() degli ArrayList. Equivalente di length negli array
 		System.out.println("Nella mia casa ci sono: " + miaCasa.stanze.size());
 	}
 }
