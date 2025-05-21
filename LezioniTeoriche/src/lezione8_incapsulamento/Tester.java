@@ -1,5 +1,7 @@
 package lezione8_incapsulamento;
 
+import java.util.ArrayList;
+
 public class Tester {
 	
 	public static void main(String[] args) {
@@ -41,5 +43,21 @@ public class Tester {
 		Seven.inserisciCOse(new Oggetto("Nicolo","Smemoranda ", 2));
 
 		Seven.elencaContenuto();
+		
+		//Respo CORSO
+		
+		RespoCorso respoEgle = new RespoCorso();
+		
+		respoEgle.setNomeRespo("Egle Risola");
+		respoEgle.setEmail("risola@immaginazioneelavoro.it");
+		respoEgle.setMatricola(1);
+		ArrayList<String> corsi= new ArrayList<String>();
+		corsi.add("TSS");
+		corsi.add("TPPW");
+		corsi.add("SR");
+		respoEgle.setCorsiAssegnati(corsi);
+		
+		System.out.println("nome respo corso: " + respoEgle.getNomeRespo());
+		
 	}
 }
